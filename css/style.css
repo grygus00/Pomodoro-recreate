@@ -15,24 +15,24 @@
   --highlights: #f69d9a;
 
   --font-title: 3rem;
+
   --font-text: 1.4rem;
 }
 
 @font-face {
   font-family: unicode;
   src: url(../font/unicode.arialr.ttf);
+  letter-spacing: 1em;
 }
 h1,
 h2,
 h3,
-h4 {
+h4,
+#logo {
   font-family: unicode;
   font-weight: bold;
 }
-a {
-  text-decoration: none;
-  color: var(--white);
-}
+
 body {
   font-family: unicode;
   font-weight: 300;
@@ -43,7 +43,46 @@ main {
   background: var(--background-color);
 }
 section,
-nav {
+nav,
+hr {
   width: 40vw;
   margin: auto;
+}
+/* ***********************NAV*********************** */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  line-height: 10%;
+}
+#menu {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+#logo {
+  font-size: 1.4rem;
+}
+nav a i {
+  padding-right: 0.6rem;
+}
+#menu a {
+  font-size: 0.9rem;
+  background-color: var(--background-lighter);
+  padding: 0.6rem 1rem;
+  margin: 0.3rem;
+  border-radius: 3px;
+  opacity: 90%;
+}
+
+/* ***********************TIMER*********************** */
+
+/* ***********************ADDONS*********************** */
+hr {
+  border: 0.01rem solid var(--text-grey);
 }
