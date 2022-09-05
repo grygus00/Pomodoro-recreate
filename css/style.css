@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: unicode;
 }
 :root {
   --background-color: #d95550;
@@ -29,24 +30,22 @@ h2,
 h3,
 h4,
 #logo {
-  font-family: unicode;
   font-weight: bold;
 }
 
 body {
-  font-family: unicode;
   font-weight: 300;
-}
-
-header,
-main {
   background: var(--background-color);
 }
+
 section,
 nav,
 hr {
   width: 40vw;
   margin: auto;
+}
+#white_bg {
+  background-color: var(--white);
 }
 /* ***********************NAV*********************** */
 nav {
@@ -54,7 +53,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 8vh;
-  line-height: 10%;
+  line-height: 5%;
 }
 #menu {
   display: flex;
@@ -81,7 +80,36 @@ nav a i {
 }
 
 /* ***********************TIMER*********************** */
-
+#timer {
+  background-color: var(--background-lighter);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 44vh;
+  margin-top: 5vh;
+  width: 30vw;
+}
+#types a {
+  margin-left: 0.5rem;
+}
+h1 {
+  color: var(--white);
+  font-size: 8rem;
+}
+button {
+  padding: 3% 20%;
+  background-color: white;
+  box-shadow: 0px 5px var(--grey);
+  border: none;
+  border-radius: 5px;
+}
+button p {
+  font-family: unicode;
+  font-weight: bold;
+  color: var(--background-color);
+  font-size: 1.5rem;
+}
 /* ***********************ADDONS*********************** */
 hr {
   border: 0.01rem solid var(--text-grey);
