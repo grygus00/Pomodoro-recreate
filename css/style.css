@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --background-color: #d95550;
+  --background-lighter: #dd6662;
+  --text-dark: #541c1f;
+  --text-grey: #785e60;
+  --grey: #ebebeb;
+  --white: #fff;
+  --highlights: #f69d9a;
+
+  --font-title: 3rem;
+  --font-text: 1.4rem;
+}
+
+@font-face {
+  font-family: unicode;
+  src: url(../font/unicode.arialr.ttf);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: unicode;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+body {
+  font-family: unicode;
+  font-weight: 300;
+}
+
+header,
+main {
+  background: var(--background-color);
+}
+section,
+nav {
+  width: 40vw;
+  margin: auto;
+}
